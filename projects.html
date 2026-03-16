@@ -3,126 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chinmeri Nwagwu's personal portfolio">
-  <meta name="keywords" content="Chinmeri Nwagwu, portfolio, IT, Information Technology Management, Illinois Institute of Technology">
-  <title>Chinmeri Nwagwu - Projects</title>
-  <!-- CSS= -->
-  <link rel="stylesheet" href="Design/styles.css">
+  <meta name="description" content="Projects by Chinmeri Nwagwu — cybersecurity, full-stack development, IoT, and network engineering.">
+  <meta name="keywords" content="Chinmeri Nwagwu, projects, cybersecurity, AWS, Python, full-stack, network">
+  <title>Projects — Chinmeri Nwagwu</title>
 
-  <!--FontAwesome LIB-->
+  <link rel="apple-touch-icon" sizes="180x180" href="Design/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Design/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Design/icons/favicon-16x16.png">
+  <link rel="manifest" href="Design/icons/site.webmanifest">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-  <!-- favicons= -->
-<link rel="apple-touch-icon" sizes="180x180" href="Design/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Design/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Design/icons/favicon-16x16.png">
-    <link rel="android-chrome" sizes="192x192" href="Design/icons/android-chrome-192x192.png">
-    <link rel="android-chrome" sizes="512x512" href="Design/icons/android-chrome-512x512.png">
-    <link rel="manifest" href="Design/icons/site.webmanifest">
-
-    <!--Reveal on Scroll-->
-<script src="https://unpkg.com/scrollreveal"></script>
-
+  <link rel="stylesheet" href="Design/styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">CN.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
   <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>DISTRA - IPRO</h3>
-        <p>
-          Collaborated with a team to create an efficient and ideal healthcare award system app, DISTRA, by conducting thorough research on the health industry and collating relevant and accurate data.
-        </p>
-        <p>
-          Developed a user-friendly and intuitive interface model for the app, ensuring an optimal user experience.
-        </p>
-        <p>
-          Implemented various data management and analysis tools, such as SQL and Python, to effectively manage and analyze healthcare data.
-        </p>
-        <p>
-          Collaborated with healthcare professionals to gather feedback and make improvements to the app.
-        </p>
-      </div>
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <h1>My Projects</h1>
+    <p>A selection of work spanning cybersecurity, cloud, full-stack development, and IoT.</p>
+  </div>
 
-      <div class="project">
-        <h3>Development of a Multi-User Q&A Forum</h3>
-        <p>
-          Designed and developed a 3-tier, multi-user Q&A website similar to StackOverflow.com.
-        </p>
-        <p>
-          Created a login screen for users to create and access their accounts.
-        </p>
-        <p>
-          Established a database to store user login information and thread postings.
-        </p>
-        <p>
-          Implemented a user interface for opening forums, posting questions, and replying to other system admins.
-        </p>
-        <p>
-          <a href="https://github.com/illinoistech-itm/2022-team11w">GitHub Repository</a>
-        </p>
-      </div>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects-section">
+    <div class="container">
+      <div class="projects-grid">
 
-      <div class="project">
-        <h3>Air Quality Monitor-IPRO</h3>
-        <p>
-          Designed and developed a small and lightweight outdoor air quality monitor for measuring components such as carbon dioxide, alcohol, benzene, nitrogen oxide, ammonia, and smoke in the air.
-        </p>
-        <p>
-          Wrote Arduino code to collect and analyze air quality values, calculate an average, and transmit this value via Neo pixel ring LEDs.
-        </p>
-        <p>
-          Report
-        </p>
-      </div>
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>DISTRA — Healthcare Award System</h3>
+          <p>
+            Collaborated with a multidisciplinary team to design and build DISTRA, an intelligent healthcare award management platform. Conducted industry research, designed a user-centered UI, and implemented data management pipelines to process and analyze healthcare datasets.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">UX Design</span>
+            <span class="tech-tag">Data Analysis</span>
+          </div>
+        </article>
 
-      <div class="project">
-        <h3>Network Technology Research</h3>
-        <p>
-          Conducted in-depth research on network technologies, including hardware, software, and security protocols, to stay up to date with industry trends and advancements.
-        </p>
-        <p>
-          Collaborated with a team to draft a comprehensive star-type Local Area Network proposal for a large company, showcasing strong teamwork and communication skills.
-        </p>
-        <p>
-          Designed and implemented network security measures, including firewalls, access controls, and encryption, to protect sensitive information and maintain data privacy.
-        </p>
-        <p>
-          Report
-        </p>
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-comments"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/illinoistech-itm/2022-team11w" target="_blank" rel="noopener" class="project-link" title="View on GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Multi-User Q&amp;A Forum</h3>
+          <p>
+            Designed and built a 3-tier web application modeled after StackOverflow. Implemented user authentication, a relational database for threads and replies, and a clean interface for community-driven Q&amp;A. Focused on secure session management and role-based access control.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML / CSS</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Auth</span>
+            <span class="tech-tag">Full-Stack</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-wind"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Report"><i class="fas fa-file-alt"></i></a>
+            </div>
+          </div>
+          <h3>Air Quality Monitor — IoT</h3>
+          <p>
+            Designed a compact, lightweight outdoor IoT sensor to measure CO₂, alcohol, benzene, nitrogen oxide, ammonia, and smoke levels. Wrote Arduino firmware to collect sensor readings, compute averages, and transmit status via NeoPixel LED indicators.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Embedded Systems</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Report"><i class="fas fa-file-alt"></i></a>
+            </div>
+          </div>
+          <h3>Enterprise LAN Security Design</h3>
+          <p>
+            Led research into modern network technologies and co-authored a comprehensive star-topology LAN proposal for a large enterprise. Designed layered network security measures including firewalls, access control lists, VPNs, and end-to-end encryption to meet data privacy requirements.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Networking</span>
+            <span class="tech-tag">Firewalls</span>
+            <span class="tech-tag">VPN</span>
+            <span class="tech-tag">Security Design</span>
+          </div>
+        </article>
+
       </div>
-    </section>
+    </div>
+  </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>Contact me at:</p>
-    <p>Email: chinmerinwagwub@gmail.com</p>
-    <p>Phone: +1 773-397-1551</p>
-     <!-- ... -->
-     <p>Follow me on:</p>
-     <a href="https://github.com/JewelPilot" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-<a href="https://linkedin.com/in/chinwagwu" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-
-     <!-- ... -->
-     <p>&copy; 2023 Chinmeri Nwagwu</p>
+    <div class="footer-inner">
+      <div class="footer-logo">Chinmeri Nwagwu</div>
+      <ul class="footer-nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://github.com/JewelPilot" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/chinwagwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:chinmerinwagwub@gmail.com"><i class="fas fa-envelope"></i> chinmerinwagwub@gmail.com</a>
+        <a href="tel:+17733971551"><i class="fas fa-phone"></i> +1 773-397-1551</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Chinmeri Nwagwu. All rights reserved.</p>
+    </div>
   </footer>
 
-  
-
-  <button onclick="topFunction()" id="topBtn" title="Go to top">
+  <button onclick="topFunction()" id="topBtn" title="Back to top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
-</button>
+  </button>
+
   <script src="js/main.js"></script>
 </body>
 </html>

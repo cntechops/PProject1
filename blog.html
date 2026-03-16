@@ -3,97 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chinmeri Nwagwu's personal portfolio">
-  <meta name="keywords" content="Chinmeri Nwagwu, portfolio, IT, Information Technology Management, Illinois Institute of Technology">
-  <title>Chinmeri Nwagwu - Blog</title>
-  <!-- CSS= -->
-  <link rel="stylesheet" href="Design/styles.css">
+  <meta name="description" content="Blog by Chinmeri Nwagwu — insights on cybersecurity, cloud infrastructure, and IT operations.">
+  <meta name="keywords" content="Chinmeri Nwagwu, blog, cybersecurity, AWS, Splunk, penetration testing, cloud security">
+  <title>Blog — Chinmeri Nwagwu</title>
 
-  <!--FontAwesome LIB-->
+  <link rel="apple-touch-icon" sizes="180x180" href="Design/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Design/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Design/icons/favicon-16x16.png">
+  <link rel="manifest" href="Design/icons/site.webmanifest">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-  <!-- favicons= -->
-<link rel="apple-touch-icon" sizes="180x180" href="Design/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Design/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Design/icons/favicon-16x16.png">
-    <link rel="android-chrome" sizes="192x192" href="Design/icons/android-chrome-192x192.png">
-    <link rel="android-chrome" sizes="512x512" href="Design/icons/android-chrome-512x512.png">
-    <link rel="manifest" href="Design/icons/site.webmanifest">
-
-    <!--Reveal on Scroll-->
-<script src="https://unpkg.com/scrollreveal"></script>
-
+  <link rel="stylesheet" href="Design/styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-post">
-          <h3>First Blog Post</h3>
-          <p>"Tyger Tyger, burning bright,<br/>
-            In the forests of the night;<br/>
-            What immortal hand or eye,<br/>
-            Could frame thy fearful symmetry?"<br/><br/>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">CN.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-            "In what distant deeps or skies.<br/>
-            Burnt the fire of thine eyes?<br/>
-            On what wings dare he aspire?<br/>
-            What the hand dare seize the fire?"<br/><br/>
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <h1>Blog</h1>
+    <p>Thoughts on cybersecurity, cloud infrastructure, and the ever-evolving IT landscape.</p>
+  </div>
 
-            "And what shoulder, and what art,<br/>
-            Could twist the sinews of thy heart?<br/>
-            And when thy heart began to beat,<br/>
-            What dread hand? and what dread feet?"<br/><br/>
+  <!-- ===== BLOG ===== -->
+  <section id="blog-section">
+    <div class="container">
+      <div class="blog-grid">
 
-            "What the hammer? what the chain?<br/>
-            In what furnace was thy brain?<br/>
-            What the anvil? what dread grasp,<br/>
-            Dare its deadly terrors clasp!"<br/><br/>
-
-            "When the stars threw down their spears<br/>
-            And water'd heaven with their tears:<br/>
-            Did he smile his work to see?<br/>
-            Did he who made the Lamb make thee?"<br/><br/>
-
-            "Tyger Tyger burning bright,<br/>
-            In the forests of the night:<br/>
-            What immortal hand or eye,<br/>
-            Dare frame thy fearful symmetry?"</p>
+        <div class="blog-card">
+          <div class="blog-card-accent"></div>
+          <div class="blog-card-body">
+            <span class="blog-category">Cybersecurity</span>
+            <h3>Getting Started with Penetration Testing: A Practical Primer</h3>
+            <p>
+              Penetration testing bridges the gap between theoretical security knowledge and real-world defense. In this post, I break down the five phases of a pentest — reconnaissance, scanning, exploitation, post-exploitation, and reporting — and share the open-source tools I use daily, from Nmap and Metasploit to Burp Suite.
+            </p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> &nbsp;Dec 2024</span>
+              <a href="#" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
-      </section>      
-    
-    </main>
 
+        <div class="blog-card">
+          <div class="blog-card-accent"></div>
+          <div class="blog-card-body">
+            <span class="blog-category">Cloud Security</span>
+            <h3>AWS Security Best Practices I Learned on the Job</h3>
+            <p>
+              Working as an AWS DCO Technician III exposed me to infrastructure security at an enormous scale. This post covers practical IAM hardening, S3 bucket policy pitfalls, VPC network segmentation, and the CloudTrail + GuardDuty monitoring stack that every AWS environment should have enabled.
+            </p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> &nbsp;Oct 2024</span>
+              <a href="#" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
 
+        <div class="blog-card">
+          <div class="blog-card-accent"></div>
+          <div class="blog-card-body">
+            <span class="blog-category">SIEM &amp; Monitoring</span>
+            <h3>Using Splunk to Hunt Threats in Your Environment</h3>
+            <p>
+              As a Splunk Core Certified Power User, I've seen first-hand how effective log correlation can drastically cut mean-time-to-detect. In this article, I walk through building SPL searches for common attack patterns — brute-force login attempts, lateral movement indicators, and data exfiltration anomalies.
+            </p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> &nbsp;Aug 2024</span>
+              <a href="#" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-accent"></div>
+          <div class="blog-card-body">
+            <span class="blog-category">Career</span>
+            <h3>From IT Management to Cybersecurity: My Transition Story</h3>
+            <p>
+              Graduating with a B.S. in IT Management gave me a broad technology foundation, but I knew I wanted to specialize in security. Here's how I leveraged my Illinois Tech education, an AWS data center role, and self-directed study with CompTIA certifications to pivot into the cybersecurity domain.
+            </p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> &nbsp;Jun 2024</span>
+              <a href="#" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-accent"></div>
+          <div class="blog-card-body">
+            <span class="blog-category">Networking</span>
+            <h3>Zero Trust Architecture: Why Perimeter Security Is Dead</h3>
+            <p>
+              The castle-and-moat model of network security fails in a world of remote work, multi-cloud deployments, and sophisticated insider threats. I explore the principles of Zero Trust — verify explicitly, use least-privilege access, assume breach — and how to begin implementing it with existing tooling.
+            </p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> &nbsp;Apr 2024</span>
+              <a href="#" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-accent"></div>
+          <div class="blog-card-body">
+            <span class="blog-category">Certifications</span>
+            <h3>How I Passed CompTIA Security+ in 6 Weeks</h3>
+            <p>
+              Security+ was my first industry certification, and the preparation process taught me as much about study discipline as it did about cryptography and network threats. I share the resources I used — Professor Messer, Jason Dion's practice exams, and hands-on labs — plus the mindset that helped me pass on the first attempt.
+            </p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> &nbsp;Jan 2024</span>
+              <a href="#" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>Contact me at:</p>
-    <p>Email: chinmerinwagwub@gmail.com</p>
-    <p>Phone: +1 773-397-1551</p>
-     <!-- ... -->
-     <p>Follow me on:</p>
-     <a href="https://github.com/JewelPilot" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-<a href="https://linkedin.com/in/chinwagwu" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-
-     <!-- ... -->
-     <p>&copy; 2023 Chinmeri Nwagwu</p>
+    <div class="footer-inner">
+      <div class="footer-logo">Chinmeri Nwagwu</div>
+      <ul class="footer-nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://github.com/JewelPilot" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/chinwagwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:chinmerinwagwub@gmail.com"><i class="fas fa-envelope"></i> chinmerinwagwub@gmail.com</a>
+        <a href="tel:+17733971551"><i class="fas fa-phone"></i> +1 773-397-1551</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Chinmeri Nwagwu. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
-
-  <button onclick="topFunction()" id="topBtn" title="Go to top">
+  <button onclick="topFunction()" id="topBtn" title="Back to top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
-</button>
+  </button>
+
   <script src="js/main.js"></script>
 </body>
 </html>

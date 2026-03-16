@@ -3,135 +3,375 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chinmeri Nwagwu's personal portfolio">
-  <meta name="keywords" content="Chinmeri Nwagwu, portfolio, IT, Information Technology Management, Illinois Institute of Technology">
-  <title>Chinmeri Nwagwu - Portfolio</title>
-  <!--FontAwesome LIB-->
+  <meta name="description" content="Chinmeri Nwagwu — Cybersecurity professional, AWS cloud technician, and IT specialist.">
+  <meta name="keywords" content="Chinmeri Nwagwu, cybersecurity, portfolio, AWS, UTSA, CompTIA Security+, penetration testing">
+  <title>Chinmeri Nwagwu — Cybersecurity & IT</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="Design/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Design/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Design/icons/favicon-16x16.png">
+  <link rel="manifest" href="Design/icons/site.webmanifest">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  <!-- CSS= -->
   <link rel="stylesheet" href="Design/styles.css">
-
-  <!-- favicons= -->
-<link rel="apple-touch-icon" sizes="180x180" href="Design/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Design/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Design/icons/favicon-16x16.png">
-    <link rel="android-chrome" sizes="192x192" href="Design/icons/android-chrome-192x192.png">
-    <link rel="android-chrome" sizes="512x512" href="Design/icons/android-chrome-512x512.png">
-    <link rel="manifest" href="Design/icons/site.webmanifest">
-
-  <!--Reveal on Scroll-->
   <script src="https://unpkg.com/scrollreveal"></script>
-
-
-
-  
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="about">
-      <div class="imgcontainer">
-      <img src="Design/images/ME.jpg" class="protraitimg">
-    </div>
-      <p id="about-me-text">
-        Having successfully completed my studies at the Illinois Institute of Technology, I hold a degree in Information and Technology Management. Throughout my academic journey, I engaged in numerous intensive courses and successfully completed complex projects, which greatly enhanced my skills and knowledge for my desired professional path. I am now eager to apply my expertise and capabilities in a full-time internship or employment opportunity. I possess a strong understanding of current technology practices and can contribute valuable insights to the organization or team I collaborate with. Furthermore, I have been trained in conducting thorough research and extracting actionable data, skills that are essential for any team's success.
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">CN.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+    </ul>
+    <a href="https://drive.google.com/file/d/15q5FXZmvle4Hrv4P_Aaky1Ut0i80O8Or/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-nav-resume">
+      <i class="fas fa-file-alt"></i> Resume
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Chinmeri Nwagwu</h1>
+      <p class="hero-subtitle">
+        <span class="typed-text"></span><span class="cursor"></span>
       </p>
+      <p class="hero-desc">
+        M.S. Cybersecurity candidate at UTSA with hands-on AWS cloud operations experience and a passion for securing systems at scale.
+      </p>
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-primary">
+          <i class="fas fa-user"></i> Learn More
+        </a>
+        <a href="https://drive.google.com/file/d/15q5FXZmvle4Hrv4P_Aaky1Ut0i80O8Or/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <i class="fas fa-file-alt"></i> View Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">2000+</div>
+          <div class="stat-label">Cases Resolved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">30%</div>
+          <div class="stat-label">Downtime Reduced</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Degrees</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section id="skills">
-        <h2>Skills</h2>
-    
-        <h3>Programming Languages</h3>
-        <div class="skills-container">
-            <a href="https://www.python.org" target="_blank"><i class="fab fa-python"></i> Python</a>
-            <a href="https://www.r-project.org" target="_blank"><i class="fas fa-laptop-code"></i> R</a>
-            <a href="https://www.java.com" target="_blank"><i class="fab fa-java"></i> Java</a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><i class="fab fa-html5"></i> HTML5</a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fab fa-css3-alt"></i> CSS3</a>
-            <a href="https://www.javascript.com/" target="_blank"><i class="fab fa-js"></i> JavaScript</a>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who <span>I Am</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-glow-ring"></div>
+          <div class="about-glow-mask"></div>
+          <img src="Design/images/ME.jpg" alt="Chinmeri Nwagwu" class="portrait">
         </div>
-    
-        <h3>DevOps</h3>
-        <div class="skills-container">
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://git-scm.com" target="_blank"><i class="fab fa-git"></i> Git</a>
-            <a href="https://www.docker.com" target="_blank"><i class="fab fa-docker"></i> Docker</a>
+        <div class="about-text">
+          <h3>Cybersecurity Specialist &amp; Cloud Professional</h3>
+          <p>
+            I'm Chinmeri Nwagwu, a cybersecurity-focused IT professional currently completing my M.S. in Information Technology (Cybersecurity) at the University of Texas at San Antonio. With a strong academic foundation and real-world cloud operations experience at AWS, I'm driven to protect digital infrastructure and solve complex security challenges.
+          </p>
+          <p>
+            My most recent role as an AWS DCO Technician III gave me direct experience managing large-scale data center operations — resolving over 2,000 support cases and reducing infrastructure downtime by 30%. I thrive at the intersection of cloud technology, network security, and systems analysis.
+          </p>
+          <p>
+            I hold a B.S. in Information Technology &amp; Management from Illinois Institute of Technology and bring expertise across security operations, penetration testing, and cloud infrastructure.
+          </p>
+          <div class="about-badges">
+            <span class="badge badge-cyan"><i class="fas fa-shield-alt"></i> &nbsp;Cybersecurity</span>
+            <span class="badge badge-purple"><i class="fab fa-aws"></i> &nbsp;AWS Cloud</span>
+            <span class="badge badge-green"><i class="fas fa-terminal"></i> &nbsp;Penetration Testing</span>
+            <span class="badge badge-cyan"><i class="fas fa-database"></i> &nbsp;Splunk</span>
+            <span class="badge badge-purple"><i class="fab fa-python"></i> &nbsp;Python</span>
+          </div>
         </div>
-    
-        <h3>Operating Systems</h3>
-        <div class="skills-container">
-            <a href="https://www.linux.org" target="_blank"><i class="fab fa-linux"></i> Linux</a>
-            <a href="https://www.microsoft.com/windows" target="_blank"><i class="fab fa-windows"></i> Windows</a>
-            <a href="https://www.apple.com/macos/" target="_blank"><i class="fab fa-apple"></i> MacOS</a>
-        </div>
-    
-        <h3>Cloud Computing Services</h3>
-        <div class="skills-container">
-            <a href="https://aws.amazon.com" target="_blank"><i class="fab fa-aws"></i> AWS</a>
-            <a href="https://cloud.google.com/" target="_blank"><i class="fab fa-google"></i> Google Cloud</a>
-        </div>
-    
-        <h3>Microsoft Office Suite</h3>
-        <div class="skills-container">
-            <a href="https://www.microsoft.com/microsoft-365/excel" target="_blank"><i class="fas fa-file-excel"></i> Microsoft Excel</a>
-            <a href="https://www.microsoft.com/microsoft-365" target="_blank"><i class="fas fa-file-word"></i> Microsoft Word</a>
-            <a href="https://www.microsoft.com/microsoft-365/powerpoint" target="_blank"><i class="fas fa-file-powerpoint"></i> Microsoft PowerPoint</a>
-        </div>
-    
-        <h3>UX Design</h3>
-        <div class="skills-container">
-            <a href="https://www.adobe.com/products/xd.html" target="_blank"><i class="fas fa-pencil-ruler"></i> Adobe XD</a>
-            <a href="https://www.adobe.com/products/photoshop.html" target="_blank"><i class="fas fa-paint-brush"></i> Adobe Photoshop</a>
-            <a href="https://www.adobe.com/products/illustrator.html" target="_blank"><i class="fas fa-drafting-compass"></i> Adobe Illustrator</a>
-        </div>
-    </section>
-    
-    
-      
-      <section id="future-goals">
-        <h2>Goals</h2>
-        <ul id="future-goals-list">
-          <li>Secure a position in a leading IT firm where I can apply my knowledge and skills.</li>
-          <li>Obtain industry-relevant certifications like CompTIA Security+, CISSP, or CISA.</li>
-          <li>Acquire certifications in cloud computing from providers like AWS, Google Cloud, or Microsoft Azure.</li>
-          <li>Assume a leadership role in IT management, driving strategies and leading teams.</li>
-          <li>Stay up-to-date with emerging technologies such as AI, Machine Learning, and Blockchain.</li>
-          <li>Make meaningful contributions to the IT industry and positively impact businesses and communities through technology.</li>
-        </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-<!-- CV Button -->
-<div class="center">
-<a href="https://drive.google.com/uc?export=download&id=1Iig9pfIKFjmhuDtzJXEB1aY4DRJIxhpj" download="Chinmeri_Nwagwu_CV.pdf" class="download-button">Download CV</a>
-</div>
-    </section>
-  </main>
-  
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Experience &amp; <span>Education</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">Nov 2023 — Dec 2024</div>
+          <div class="timeline-title">AWS DCO Technician III</div>
+          <div class="timeline-org">Amazon Web Services · Full-time</div>
+          <ul class="timeline-points">
+            <li>Resolved 2,000+ technical support cases, maintaining high SLA compliance across data center operations.</li>
+            <li>Reduced infrastructure downtime by 30% through proactive diagnostics and rapid incident response.</li>
+            <li>Managed physical and virtual server provisioning, networking, and hardware lifecycle in large-scale AWS data centers.</li>
+            <li>Collaborated cross-functionally with engineering teams to triage and escalate critical infrastructure failures.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-title">M.S. Information Technology — Cybersecurity</div>
+          <div class="timeline-org">University of Texas at San Antonio (UTSA)</div>
+          <ul class="timeline-points">
+            <li>Specialized in cybersecurity, covering network defense, ethical hacking, digital forensics, and risk management.</li>
+            <li>Applied hands-on skills in penetration testing, SIEM analysis with Splunk, and cloud security architecture.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2019 — 2023</div>
+          <div class="timeline-title">B.S. Information Technology &amp; Management</div>
+          <div class="timeline-org">Illinois Institute of Technology</div>
+          <ul class="timeline-points">
+            <li>Completed intensive coursework in networking, database systems, project management, and UX design.</li>
+            <li>Built and deployed full-stack web applications, IoT systems, and network infrastructure proposals.</li>
+            <li>Led collaborative research projects focused on healthcare technology and air quality monitoring.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon cyan"><i class="fas fa-code"></i></div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon purple"><i class="fas fa-shield-alt"></i></div>
+            <h3>Cybersecurity</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Penetration Testing</span>
+            <span class="skill-tag">Network Security</span>
+            <span class="skill-tag">SIEM / Log Analysis</span>
+            <span class="skill-tag">Vulnerability Assessment</span>
+            <span class="skill-tag">Digital Forensics</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon cyan"><i class="fab fa-aws"></i></div>
+            <h3>Cloud &amp; DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Windows Server</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon green"><i class="fas fa-chart-bar"></i></div>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Splunk</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Metasploit</span>
+            <span class="skill-tag">Nmap</span>
+            <span class="skill-tag">Microsoft 365</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifi<span>cations</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card cert-clickable"
+             role="button" tabindex="0"
+             data-title="CompTIA Security+"
+             data-embed="https://drive.google.com/file/d/1JY78dcntV2pdjyrgyfpekWsZ7F8b3ZMz/preview">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-info">
+            <h4>CompTIA Security+</h4>
+            <p>CompTIA · Active</p>
+          </div>
+          <div class="cert-view-hint"><i class="fas fa-eye"></i> View</div>
+        </div>
+
+        <div class="cert-card cert-clickable"
+             role="button" tabindex="0"
+             data-title="CompTIA A+"
+             data-embed="https://drive.google.com/file/d/1Od2ppPvyyELwp6oFG50Cx0cTJM2z5Ovu/preview">
+          <div class="cert-icon"><i class="fas fa-laptop"></i></div>
+          <div class="cert-info">
+            <h4>CompTIA A+</h4>
+            <p>CompTIA · Active</p>
+          </div>
+          <div class="cert-view-hint"><i class="fas fa-eye"></i> View</div>
+        </div>
+
+        <div class="cert-card cert-clickable"
+             role="button" tabindex="0"
+             data-title="Splunk Core Certified Power User"
+             data-embed="https://drive.google.com/file/d/19JcVdLUQLBfp9C5sX4Zu_k01PqO5HISa/preview">
+          <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="cert-info">
+            <h4>Splunk Core Certified Power User</h4>
+            <p>Splunk · Active</p>
+          </div>
+          <div class="cert-view-hint"><i class="fas fa-eye"></i> View</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GOALS ===== -->
+  <section id="goals">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Vision</span>
+        <h2 class="section-title">Future <span>Goals</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="goals-grid">
+
+        <div class="goal-card">
+          <div class="goal-number">01</div>
+          <p>Secure a cybersecurity role at a leading IT firm, contributing to threat intelligence and incident response at scale.</p>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-number">02</div>
+          <p>Obtain advanced certifications — CISSP, CEH, and AWS Security Specialty — to deepen expertise in offensive and defensive security.</p>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-number">03</div>
+          <p>Master cloud security architecture across AWS and Azure, designing resilient zero-trust environments.</p>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-number">04</div>
+          <p>Lead a security operations team, driving strategies that proactively defend against emerging threats and vulnerabilities.</p>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-number">05</div>
+          <p>Contribute to the cybersecurity community through open-source tools, research publications, and mentoring the next generation of practitioners.</p>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-number">06</div>
+          <p>Stay ahead of the threat landscape by continuously researching AI-driven attacks, zero-day exploits, and evolving compliance frameworks.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>Contact me at:</p>
-    <p>Email: chinmerinwagwub@gmail.com</p>
-    <p>Phone: +1 773-397-1551</p>
-     <!-- ... -->
-     <p>Follow me on:</p>
-     <a href="https://github.com/JewelPilot" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-<a href="https://linkedin.com/in/chinwagwu" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-
-     <!-- ... -->
-     <p>&copy; 2023 Chinmeri Nwagwu</p>
+    <div class="footer-inner">
+      <div class="footer-logo">Chinmeri Nwagwu</div>
+      <ul class="footer-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#goals">Goals</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://github.com/JewelPilot" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/chinwagwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:chinmerinwagwub@gmail.com"><i class="fas fa-envelope"></i> chinmerinwagwub@gmail.com</a>
+        <a href="tel:+17733971551"><i class="fas fa-phone"></i> +1 773-397-1551</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Chinmeri Nwagwu. All rights reserved.</p>
+    </div>
   </footer>
-  
-  <button onclick="topFunction()" id="topBtn" title="Go to top">
+
+  <button onclick="topFunction()" id="topBtn" title="Back to top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
-</button>
+  </button>
+
+  <!-- ===== CERT MODAL ===== -->
+  <div class="modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe id="modalFrame" src="" allowfullscreen title="Certificate"></iframe>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
